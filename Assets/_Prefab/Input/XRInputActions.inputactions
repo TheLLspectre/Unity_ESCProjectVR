@@ -1,0 +1,424 @@
+{
+    "name": "XRInputActions",
+    "maps": [
+        {
+            "name": "Control",
+            "id": "d19f6b44-2ad1-421f-9532-ea5f527b49d8",
+            "actions": [
+                {
+                    "name": "LeftHandTrigger",
+                    "type": "Button",
+                    "id": "038049b5-45cc-4701-abdc-b8323b8b8851",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHandGrip",
+                    "type": "Button",
+                    "id": "e8628683-95ba-42fc-a388-5537e6a128e4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHandButton1",
+                    "type": "Button",
+                    "id": "5d8b11a4-d22a-4a63-a071-f136165ee340",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHandButton2",
+                    "type": "Button",
+                    "id": "a83a67df-7c0e-48aa-99b8-1d843f13bd6e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHandStick",
+                    "type": "Value",
+                    "id": "afc0cdf1-52c5-4888-919a-9af8c76f7c67",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHandStickUp",
+                    "type": "Value",
+                    "id": "76020cc6-9c0a-4b67-9e72-92bc428f20e5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHandStickX",
+                    "type": "Value",
+                    "id": "45363931-b916-4e3a-b5b4-69499826f3b1",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHandStickY",
+                    "type": "Value",
+                    "id": "a931de23-09ac-40b2-bf36-41536a118ed5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LeftHandStickDown",
+                    "type": "Value",
+                    "id": "f9c7f0d8-8e17-4b4e-9ec1-49c8a1f6bb08",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandTrigger",
+                    "type": "Button",
+                    "id": "4b46bd39-cd7b-45b3-a4c9-8504a3b3a7de",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandGrip",
+                    "type": "Button",
+                    "id": "e9a03c93-4dba-4df1-98fa-aaddd70636b0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandButton1",
+                    "type": "Button",
+                    "id": "b8f8a91d-4f7d-47ae-b631-64de6af939b5",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandButton2",
+                    "type": "Button",
+                    "id": "6c61979f-eab5-4f0e-a2d7-e5db557e1b68",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandStick",
+                    "type": "Value",
+                    "id": "e6f1e4c4-ab93-49f7-8462-35561eae5ca3",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandStickUp",
+                    "type": "Value",
+                    "id": "059c9747-4499-41fb-9b42-c9ac0b362629",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandStickX",
+                    "type": "Value",
+                    "id": "f0a8a51d-d3f7-4e2d-82ca-a0ff516173eb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandStickY",
+                    "type": "Value",
+                    "id": "b160c553-2edc-4ae1-bf01-add912439df7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandStickDown",
+                    "type": "Value",
+                    "id": "25657c26-b994-4b85-b88b-58e1c7771b8e",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RightHandTouchPad",
+                    "type": "Value",
+                    "id": "a0df8363-1ec8-48ed-af69-05e8126d0924",
+                    "expectedControlType": "Vector2",
+                    "processors": "NormalizeVector2,ScaleVector2,StickDeadzone(max=1)",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "8190bdd7-9b85-437a-a8cf-4804b6959152",
+                    "path": "<XRController>{LeftHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftHandTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "27cb2b19-d6b0-4ae3-9a8f-50732b6666f4",
+                    "path": "<XRController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightHandTrigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "47d3630b-2d1b-43a3-8685-0e8964e07dfc",
+                    "path": "<XRController>{RightHand}/touchpad",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightHandTouchPad",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8cf8a84d-a616-4244-9ace-a498f261b6b7",
+                    "path": "<XRController>{RightHand}/joystick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightHandStick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6c82bb58-f019-4f50-a35e-c3c57d8e0591",
+                    "path": "<XRController>{RightHand}/joystick",
+                    "interactions": "Sector(directions=1),Sector(pressPoint=1)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightHandStickUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c14b1bfd-ace5-4f43-a1e9-e2b506309396",
+                    "path": "<XRController>{RightHand}/joystick",
+                    "interactions": "Sector(directions=12),Sector(pressPoint=1)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightHandStickX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d1d32978-bfb3-4dd9-b5dd-7710a06691b6",
+                    "path": "<XRController>{RightHand}/joystick",
+                    "interactions": "Sector(directions=3),Sector(pressPoint=1)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightHandStickY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83697cdc-7859-432f-8938-337b73b6aae3",
+                    "path": "<XRController>{RightHand}/joystick",
+                    "interactions": "Sector(directions=2),Sector(pressPoint=1)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightHandStickDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9bc30cbe-80ff-4166-9195-e8aa02a69366",
+                    "path": "<XRController>{LeftHand}/joystick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftHandStick",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9601e8dc-55cd-476a-89bc-17a7fc076881",
+                    "path": "<XRController>{LeftHand}/joystick",
+                    "interactions": "Sector(directions=1),Sector(pressPoint=1)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftHandStickUp",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7984a4aa-4f62-4786-8b87-6bf1f03bfe6b",
+                    "path": "<XRController>{LeftHand}/joystick",
+                    "interactions": "Sector(directions=12),Sector(pressPoint=1)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftHandStickX",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "95fe78f6-bb8c-43c7-8492-440f65340578",
+                    "path": "<XRController>{LeftHand}/joystick",
+                    "interactions": "Sector(directions=3),Sector(pressPoint=1)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftHandStickY",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b1b5f0aa-c3e1-4d65-b3b0-9d0cb1dc2a26",
+                    "path": "<XRController>{LeftHand}/joystick",
+                    "interactions": "Sector(directions=2),Sector(pressPoint=1)",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftHandStickDown",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5e8431f3-e9c5-43ec-b6f6-b993395b931e",
+                    "path": "<XRController>{RightHand}/gripPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightHandGrip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b09d477c-5c11-43a9-9c2e-33cacf07b2b2",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightHandButton1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "685158bf-5b30-473f-97ea-a3ff3bfcdbc7",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "RightHandButton2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8dbed59e-dcad-4dcf-9793-49ec252190f2",
+                    "path": "<XRController>{LeftHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftHandButton2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa17cf97-572e-443b-bbf2-295f66d9efdd",
+                    "path": "<XRController>{LeftHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftHandButton1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "21d0cb96-54a5-430c-b18f-953c466ac1c0",
+                    "path": "<XRController>{LeftHand}/gripButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "LeftHandGrip",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "UI",
+            "id": "4f5e1f37-0de1-4c3f-8e90-a8d07c47d289",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "9585d253-530c-463c-a5f8-9ac1f9126e45",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "d6a56937-7431-4a46-ad1e-c1624e265d4d",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "XR",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "XR",
+            "bindingGroup": "XR",
+            "devices": [
+                {
+                    "devicePath": "<TrackedDevice>",
+                    "isOptional": true,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<XRController>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<XRHMD>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}

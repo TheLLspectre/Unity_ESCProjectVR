@@ -1,0 +1,14 @@
+{
+    "dialogText001": "Merci à toi d'être venue m'aider dans cette expérience !\nJuste derrière toi Arthur est coincé, le processeur de son ordinateur est tombé en panne. On a besoin de toi pour le réparer.\nTrouve toutes les pattes du processeur pour lui permettre d'avoir accès aux expériences de découvertes des métiers !",
+    "dialogText002": "Pour commencer, il te faut contrôler ta caméra dans ce monde dématérialisé. Utilise <sprite=8> pour regarder tout autour de toi !\n\nSi tu veux pouvoir dévérouiller la porte juste en face de toi il te faut activer les blocs de raytracing rouge.\n(\"Théoriquement les fixer pendant deux secondes devrait largement suffire.\")",
+    "dialogText003": "Bravo !!\n\nMaintenant en tant qu'humain il t'est impossible d'utiliser tes jambes dans ce monde virtuel. Par contre les puissances de calcul mis à disposition ici nous permettent de vous simuler !\n\nSi tu appuies sur <sprite=2> tu devrais te déplacer vers l'avant. <sprite=1> te fera aller vers ta gauche, <sprite=0> vers ta droite et pour finir <sprite=3> te fera reculer. Essaies donc ! Va jusqu'à la salle en face de toi !",
+    "dialogText004": "Impeccable !\n\nMaintenant en combinant ce que tu viens d'apprendre, tu vas pouvoir te déplacer en t'orientant dans un univers en 3 Dimensions.\n\nDépêche-toi ! Rentre dans la salle suivante !",
+    "dialogText005": "Voilà des plaques de pression, en te déplaçant dessus, tu devrais pouvoir les réactiver pour déverrouiller la porte suivante !",
+    "dialogText006": "La salle suivante est déverrouillée bien joué !\n\n",
+    "dialogText007": "Voilà trois boutons pressoirs. Place toi en face de chacun d'entre eux et appuie sur la touche <sprite=09> pour les activer.\n\nActiver les trois devrait permettre de réactiver le courant dans l'ordinateur et libérer l'accès à l'étage supérieur.",
+    "dialogText008": "C'est la première patte du processeur !\n\nApproche toi d'elle et utilise <sprite=16> pour activer prendre la patte en main.",
+    "dialogText009": "Il te faut maintenant ramener celle-ci jusqu'au processeur à l'étage inférieur.",
+    "dialogText010": "Approche du processeur avec la patte en main et appuie sur <sprite=16>.",
+    "dialogText011": "Parfait !\n\nMaintenant il te reste à trouver les 3 dernières pattes du processeur pour le réparer, afin de permettre à Arthur de découvrir de nouveaux métiers. Les dernières pattes se trouvent dans des armoires rouges réparties dans toute l'unité !\n\nAvec tout ce que tu as appris, tu devrais t'en sortir sans problème !",
+    "dialogText012": "Super, tu as réparé le processeur !\n\nArthur va pouvoir reprendre sa découverte des métiers et trouver celui qui le fera vibrer !"
+}
