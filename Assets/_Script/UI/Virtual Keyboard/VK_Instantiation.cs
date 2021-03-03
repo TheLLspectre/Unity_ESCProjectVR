@@ -41,14 +41,18 @@ namespace TheRed.UI.Keyboard
             }
             
             vk = virtualKeyboard.GetComponent<VirtualKeyboard>();
+            vk._VK_Instantiation = this;
             vk.IField = this.GetComponent<TMP_InputField>();
+            vk.ActualiseKeyboard();
+            Debug.Log("Actualise");
         }
 
         public void DeselectTMPInput()
         {
-            if (SceneVirtualKeyboard != null)
+            if (SceneVirtualKeyboard != null && virtualKeyboard != null)
             {
                 virtualKeyboard.SetActive(false);
+                vk._VK_Instantiation = null;
                 vk = null;
                 virtualKeyboard = null;
             }

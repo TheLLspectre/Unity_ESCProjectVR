@@ -1598,10 +1598,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: VIRTUAL KEYBOARD FR
       objectReference: {fileID: 0}
-    - target: {fileID: 1261817520118288612, guid: b3964c0fc2924c8478af5bf4c43a42e6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1261817520118288613, guid: b3964c0fc2924c8478af5bf4c43a42e6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1685,10 +1681,6 @@ PrefabInstance:
     - target: {fileID: 1261817520118288613, guid: b3964c0fc2924c8478af5bf4c43a42e6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2874890623777323913, guid: b3964c0fc2924c8478af5bf4c43a42e6, type: 3}
-      propertyPath: m_Name
-      value: Letter Key Q
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3964c0fc2924c8478af5bf4c43a42e6, type: 3}

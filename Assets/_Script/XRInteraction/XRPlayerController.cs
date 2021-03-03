@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Photon.Pun;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
+using TheRed.Multiplayer;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
@@ -12,14 +14,19 @@ using UnityEngine.XR;
 namespace TheRed.Player.XRController
 {
     [AddComponentMenu("TheRed/XRInteraction/XRPlayerController")]
-    public class XRPlayerController : MonoBehaviour
+    public class XRPlayerController : MonoBehaviourPunCallbacks, IPunObservable
     {
         //public
-        #region public statement
+        #region Public Statement
         public HandPresence RightHandPresence { get { return rightHandPresence; } set { rightHandPresence = value; } }
         public HandPresence LeftHandPresence { get { return leftHandPresence; } set { leftHandPresence = value; } }
 
-        [Header("XR Hands")]
+        public static GameObject LocalPlayerInstance;
+        
+        [Header("XR Camera :")]
+        public GameObject CameraObject;
+        
+        [Header("XR Hands :")]
         public GameObject RightHand;
         public GameObject LeftHand;
 
@@ -29,7 +36,7 @@ namespace TheRed.Player.XRController
         #endregion
 
         //private
-        #region private statement
+        #region Private Statement
         private HandPresence rightHandPresence = null;
         private HandPresence leftHandPresence = null;
         private XRInputActions input;
@@ -57,6 +64,9 @@ namespace TheRed.Player.XRController
 
         private void Awake()
         {
+                //if(photonView.IsMine)
+                    XRPlayerController.LocalPlayerInstance = this.gameObject;
+            DontDestroyOnLoad(this.gameObject);
             input = new XRInputActions();
         }
 
@@ -730,6 +740,11 @@ namespace TheRed.Player.XRController
         {
             UnsubscribeEvent();
             input.Disable();
+        }
+
+        public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+        {
+            throw new NotImplementedException();
         }
     }
 }

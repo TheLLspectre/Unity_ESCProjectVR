@@ -26,6 +26,9 @@ namespace TheRed.UI.Keyboard.Key
 
         public delegate void OnEnterPressedHandler();
         public static event OnEnterPressedHandler OnEnterPressed;
+
+        public delegate void OnClosePressedHandler();
+        public static event OnClosePressedHandler OnClosePressed;
         #endregion
 
         #region Private Fields
@@ -40,9 +43,9 @@ namespace TheRed.UI.Keyboard.Key
         // Start is called before the first frame update
         void Start()
         {
-            if (KeyValue == string.Empty)
+            if (KeyValue == string.Empty) // If the value is empty
                 Debug.LogError("This key haven't value affected.", gameObject);
-            if (v_keyboard == null)
+            if (v_keyboard == null) // If the virtual keyboard is null
                 Debug.LogError("This key is not assign to a keyboard. ", gameObject);
 
             InitializeVK();
@@ -76,13 +79,12 @@ namespace TheRed.UI.Keyboard.Key
 
         private void OnUpperCase(bool uppercase)
         {
-
             if (TMP_Key != null)
                 if (KeyValue != string.Empty)
                 {
                     if (!SpecialCharacter)
                     {
-                        if (uppercase)
+                        if (uppercase) // if uppercase is true
                         {
                             //Debug.Log(TMP_Key.text + " " + KeyValue.ToUpper());
                             KeyValue = KeyValue.ToUpper();
@@ -116,8 +118,23 @@ namespace TheRed.UI.Keyboard.Key
 
             if (TMP_Key != null)
                 if (KeyValue != string.Empty)
-                    if (TMP_Key.text != KeyValue)
-                        TMP_Key.SetText(KeyValue); // Affect the display character to the button.
+                    if (!SpecialCharacter)
+                    {
+                        if (TMP_Key.text != KeyValue)
+                            if (v_keyboard.UpperCase) // if uppercase is true
+                            {
+                                //Debug.Log(TMP_Key.text + " " + KeyValue.ToUpper());
+                                KeyValue = KeyValue.ToUpper();
+                                TMP_Key.SetText(KeyValue); // Affect the display character to the button.
+                            }
+                            else
+                            {
+                                //Debug.Log(TMP_Key.text + " " + KeyValue.ToLower());
+                                KeyValue = KeyValue.ToLower();
+                                TMP_Key.SetText(KeyValue.ToLower()); // Affect the display character to the button.
+                            }
+                    }
+            
         }
 
         #endregion
@@ -176,6 +193,17 @@ namespace TheRed.UI.Keyboard.Key
                         break;
 
                     case "ENTER":
+                        break;
+
+                        //Close case
+                    case "FERMER":
+                        if (OnClosePressed != null)
+                            OnClosePressed();
+                        break;
+
+                    case "CLOSE":
+                        if (OnClosePressed != null)
+                            OnClosePressed();
                         break;
                 }
             }

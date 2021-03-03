@@ -13,6 +13,8 @@ namespace TheRed.UI.Keyboard
     {
         #region Public Fields
 
+        public VK_Instantiation _VK_Instantiation { get { return _vk_Instantiation; } set { _vk_Instantiation = value; } }
+
         public TMP_InputField IField;
 
         [Header("Keyboard states:")]
@@ -28,6 +30,7 @@ namespace TheRed.UI.Keyboard
         #region Private Fields
 
         private List<char> listChar = new List<char>();
+        private VK_Instantiation _vk_Instantiation = null;
 
         private string t_IField;
 
@@ -42,10 +45,6 @@ namespace TheRed.UI.Keyboard
                 t_IField = IField.text;
             else
                 Debug.LogError("This keyboard is not assign to an inputField.", gameObject);
-
-            //Notify every input from this keyboard the uppercase aren't activated
-            if (OnUpperCase != null)
-                OnUpperCase(UpperCase);
         }
 
         private void OnEnable()
@@ -54,6 +53,7 @@ namespace TheRed.UI.Keyboard
             VK_Key.OnShiftLockPressed += SetShiftLock;
             VK_Key.OnDeletePressed += DeleteCharacter;
             VK_Key.OnEnterPressed += OnEnterPressed;
+            VK_Key.OnClosePressed += OnClosePressed;
         }
 
         private void OnDisable()
@@ -62,11 +62,17 @@ namespace TheRed.UI.Keyboard
             VK_Key.OnShiftLockPressed -= SetShiftLock;
             VK_Key.OnDeletePressed -= DeleteCharacter;
             VK_Key.OnEnterPressed -= OnEnterPressed;
+            VK_Key.OnClosePressed -= OnClosePressed;
         }
 
         #endregion
 
         #region Private Callbacks
+
+        private void OnClosePressed()
+        {
+            _vk_Instantiation.DeselectTMPInput();
+        }
 
         private void OnEnterPressed()
         {
@@ -119,6 +125,16 @@ namespace TheRed.UI.Keyboard
         #endregion
 
         #region Public Methods
+
+        public void ActualiseKeyboard()
+        {
+            //Notify every input from this keyboard the uppercase aren't activated
+            if (OnUpperCase != null)
+            {
+                OnUpperCase(UpperCase);
+            }
+                
+        }
 
         public void WriteCharacter(string characterReceived)
         {
