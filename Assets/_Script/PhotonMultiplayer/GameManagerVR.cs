@@ -72,15 +72,29 @@ namespace TheRed.Multiplayer
             else
             {
                 GameObject sp = GameSetup.Instance.GetSpawnPoint(0);
-                if (sp != null)
+                if (TRG.XRPlayerController.LocalPlayerInstance != null)
                 {
-                    TRG.XRPlayerController.LocalPlayerInstance.transform.position = sp.transform.position;
-                    TRG.XRPlayerController.LocalPlayerInstance.transform.rotation = sp.transform.rotation;
+                    if (sp != null)
+                    {
+                        TRG.XRPlayerController.LocalPlayerInstance.transform.position = sp.transform.position;
+                        TRG.XRPlayerController.LocalPlayerInstance.transform.rotation = sp.transform.rotation;
+                    }
+                    else
+                    {
+                        TRG.XRPlayerController.LocalPlayerInstance.transform.position = new Vector3(0, 10, 0);
+                        TRG.XRPlayerController.LocalPlayerInstance.transform.rotation = Quaternion.identity;
+                    }
                 }
                 else
                 {
-                    TRG.XRPlayerController.LocalPlayerInstance.transform.position = new Vector3(0, 10, 0);
-                    TRG.XRPlayerController.LocalPlayerInstance.transform.rotation = Quaternion.identity;
+                    if (sp != null)
+                    {
+                        Instantiate(this.playerPrefabVR, sp.transform.position, sp.transform.rotation);
+                    }
+                    else
+                    {
+                        Instantiate(this.playerPrefabVR, new Vector3(0, 10, 0), Quaternion.identity);
+                    }
                 }
             }
         }

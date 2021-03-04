@@ -107,7 +107,6 @@ namespace TheRed.Player.XRController
         {
             //Right XR Controller
             //Trigger
-            Debug.LogError("SubToRightHandTrigger " + input.Control);
             input.Control.RightHandTrigger.started += ctx => OnRightHandTriggerStarted();
             input.Control.RightHandTrigger.performed += ctx => OnRightHandTriggerPerformed();
             input.Control.RightHandTrigger.canceled += ctx => OnRightHandTriggerCanceled();
